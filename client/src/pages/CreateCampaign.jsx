@@ -106,7 +106,7 @@ const CreateCampaign = () => {
           <div className="flex justify-center items-center mt-[40px]">
             <CustomButton 
               btnType="submit"
-              title="Submit new Campaign"
+              title="Submit New Campaign"
               styles="bg-[#ffbb56]"
             />
           </div>
