@@ -96,7 +96,7 @@ const CreateCampaign = () => {
         </div>
 
         <FormField 
-            labelName="Campaign image *"
+            labelName="Campaign Image *"
             placeholder="Place image URL of your campaign"
             inputType="url"
             value={form.image}
@@ -107,7 +107,7 @@ const CreateCampaign = () => {
             <CustomButton 
               btnType="submit"
               title="Submit new campaign"
-              styles="bg-[#1dc071]"
+              styles="bg-[#34499a]"
             />
           </div>
       </form>
