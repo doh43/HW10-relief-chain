@@ -25,8 +25,8 @@ const Navbar = () => {
       <div className="sm:flex hidden flex-row justify-end gap-4">
         <CustomButton 
           btnType="button"
-          title={address ? 'Create a campaign' : 'Connect'}
-          styles={address ? 'bg-[#ffbb56]' : 'bg-[#8c6dfd]'}
+          title={address ? 'Create a Campaign' : 'Connect'}
+          styles={address ? 'bg-[#34499a]' : 'bg-[#8c6dfd]'}
           handleClick={() => {
             if(address) navigate('create-campaign')
             else connect()
@@ -34,7 +34,7 @@ const Navbar = () => {
         />
 
         <Link to="/profile">
-          <div className="w-[52px] h-[52px] rounded-full bg-[#85837E] flex justify-center items-center cursor-pointer">
+          <div className="w-[52px] h-[52px] rounded-full bg-[white] flex justify-center items-center cursor-pointer">
             <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain" />
           </div>
         </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
                     alt={link.name}
                     className={`w-[24px] h-[24px] object-contain ${isActive === link.name ? 'grayscale-0' : 'grayscale'}`}
                   />
-                  <p className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === link.name ? 'text-[#e8b0e4]' : 'text-[#808191]'}`}>
+                  <p className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === link.name ? 'text-[#ffbb56]' : 'text-[#808191]'}`}>
                     {link.name}
                   </p>
                 </li>
@@ -80,8 +80,8 @@ const Navbar = () => {
             <div className="flex mx-4">
             <CustomButton 
               btnType="button"
-              title={address ? 'Create a campaign' : 'Connect'}
-              styles={address ? 'bg-[#ffbb56]' : 'bg-[#ffbb56]'}
+              title={address ? 'Create a Campaign' : 'Connect'}
+              styles={address ? 'bg-[#34499a]' : 'bg-[#ffbb56]'}
               handleClick={() => {
                 if(address) navigate('create-campaign')
                 else connect();
